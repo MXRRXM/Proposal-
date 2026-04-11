@@ -6,6 +6,37 @@
   <title>Strategic Proposal | Kingdom Schools × Manifest XR</title>
 
   <style>
+
+    /* NEW NAVIGATION TAB STYLING */
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--ks-navy);
+      padding: 12px 0;
+      border-bottom: 3px solid var(--ks-gold);
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .nav-btn {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 8px 20px;
+      border: 1px solid var(--ks-gold);
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-btn:hover {
+      background: var(--ks-gold);
+      color: var(--ks-navy);
+    }
     :root{
       --ks-navy: #112143;
       --ks-gold: #C5A059;
@@ -102,6 +133,13 @@
 </head>
 
 <body>
+  <nav class="top-nav">
+    <a href="Kingdom Schools Immersive Lab.html" class="nav-btn">
+      View Immersive Lab Proposal →
+    </a>
+  </nav>
+  <main class="page">
+    <div class="hero-container"></div>
   <main class="page">
 
     <div class="hero-container"></div>
