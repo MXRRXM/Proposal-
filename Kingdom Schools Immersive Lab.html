@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifest XR | Immersive Lab Proposal</title>
+    <style>
+        :root {
+            --primary: #002c53;
+            --gold: #D4AF37;
+            --text: #333;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+            --border: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: var(--white);
+            box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Video Header Styles */
+        .video-header {
+            width: 100%;
+            background: #000;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 16 / 9; /* Standard cinematic look, can adjust to 640/1138 if preferred */
+        }
+
+        .video-header video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-placeholder {
+            color: #555;
+            text-align: center;
+            padding: 100px 20px;
+            background: #1a1a1a;
+            width: 100%;
+        }
+
+        header {
+            background: var(--primary);
+            color: var(--white);
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 40px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--gold);
+            padding-left: 15px;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+
+        h3 {
+            color: var(--primary);
+            margin-top: 30px;
+        }
+
+        .highlight-box {
+            background: var(--light-bg);
+            border: 1px solid var(--border);
+            padding: 25px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        th {
+            background: var(--primary);
+            color: var(--white);
+            text-align: left;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 350px;
+            background: #eee;
+            border: 2px dashed #ccc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            margin: 20px 0;
+            border-radius: 6px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .price-text {
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9em;
+            color: #777;
+            background: var(--light-bg);
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #666;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="video-header">
+        <video controls poster="video-thumbnail.jpg">
+            <source src="immersive-lab-demo.mp4" type="video/mp4">
+            <div class="video-placeholder">
+                [ PLACE IMMERSIVE LAB VIDEO HERE ] <br>
+                Recommended Resolution: 640 x 1138 or 1920 x 1080
+            </div>
+        </video>
+    </div>
+
+    <header>
+        <h1>The Immersive Lab: Collaborative Intelligence Hub</h1>
+        <p>360° Learning environment for K-12 and group activities</p>
+    </header>
+
+    <section>
+        <h2>Overview</h2>
+        <p>The Immersive Lab is a high-utility, shared digital environment designed to be the heartbeat of the school’s innovation strategy. Rather than a single-purpose room, it is a multi-activity space that adapts to every subject, age group, and learning style. By projecting a seamless 360° digital skin across the walls, we turn the physical classroom into a giant, interactive tablet.</p>
+        
+        <h3>Interactive & Tactile Engagement</h3>
+        <ul>
+            <li><strong>360° Touch-Screen Integration:</strong> The space is not just for viewing; it is for doing. The entire perimeter can be enabled with touchscreen, allowing students to manipulate data, draw on 360° canvases, and interact with digital objects directly on the walls.</li>
+            <li><strong>Across Versatility:</strong> One hour the space is a deep-sea research station; the next, it is a collaborative "War Room" for student council debates or a zen-space for mindfulness and well-being.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>K-12 Core Educational Use Cases</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Activity Type</th>
+                    <th>K-12 Application</th>
+                    <th>Learning Outcome</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Interactive Literacy</td>
+                    <td>Living Storybooks</td>
+                    <td>Primary students step inside a story and use touch-walls to move characters and trigger plot points.</td>
+                </tr>
+                <tr>
+                    <td>Active Geography</td>
+                    <td>Global Weather & Mapping</td>
+                    <td>Students interact with real-time weather data and 360° maps to "travel" to different biomes and cultures.</td>
+                </tr>
+                <tr>
+                    <td>Gamified Math</td>
+                    <td>Spatial Problem Solving</td>
+                    <td>Turning the room into a giant puzzle where students must solve equations on the walls to "unlock" the next level.</td>
+                </tr>
+                <tr>
+                    <td>Collaborative STEM</td>
+                    <td>Digital Dissections & Labs</td>
+                    <td>Middle and High School students perform group "dissections" or chemistry experiments with interactive, 3D labels.</td>
+                </tr>
+                <tr>
+                    <td>Creative Arts</td>
+                    <td>Immersive Exhibition</td>
+                    <td>A digital gallery where students display their own digital art and 3D models at a massive, room-filling scale.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Manifest "High-Touch" Support & Rigour</h2>
+        <p>We understand that technology is only as effective as the teachers who lead it. To ensure this space becomes a core part of your daily curriculum—not just a "showpiece"—we provide an industry-leading support model:</p>
+        <ul>
+            <li><strong>Bi-Weekly In-Person/ Online Training:</strong> A Manifest XR specialist will regularly catch up with team to provide support.</li>
+            <li><strong>The Competency Framework:</strong> These sessions are not just "check-ins." We provide rigorous, hands-on professional development designed to move teachers from "novice" to "confident orchestrators" of the space.</li>
+            <li><strong>Curriculum Alignment:</strong> During our bi-weekly visits, we work with your department heads to map upcoming lesson plans directly to Immersive Lab activities.</li>
+            <li><strong>On-Call Technical Support:</strong> Beyond our bi-weekly visits, you have a dedicated support line to ensure 99.9% uptime for all institutional activities.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Deployment Roadmap & Lead Times</h2>
+        <span class="tagline">"Precision Logistics & Installation"</span>
+        <p>We operate with a "Turnkey Execution" philosophy. From the moment the purchase order is finalized, our global logistics and technical teams move into a synchronized 8-week rollout phase.</p>
+        <ul>
+            <li><strong>Weeks 1–4: Procurement & Global Logistics</strong> - Sourcing specialized components and managing international shipping (including SABER and DDP Riyadh clearance) to ensure all hardware arrives on-site securely.</li>
+            <li><strong>Weeks 5–6: On-Site Integration</strong> - Our specialized engineers handle the physical build-out, including the 360° projection alignment, touch-screen calibration, and TASI AI server integration.</li>
+            <li><strong>Weeks 7–8: Staff Certification & Launch</strong> - Before the doors open to students, we conduct an intensive "Onboarding Sprint." This ensures your lead team is fully competent and confident in the space, concluding with a formal launch event.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Institutional Impact: Safety, Inclusion & Branding</h2>
+        <span class="tagline">"Ensuring a Secure and Marketable Innovation Strategy"</span>
+        
+        <h3>A Walled Garden: Safeguarding & Moderation</h3>
+        <p>In a K-12 environment, student safety is our primary objective. Unlike open-platform technologies, the Immersive Lab is a "Walled Garden" ecosystem.</p>
+        <ul>
+            <li><strong>Curated Content:</strong> All 360° environments and AI-generated assets are filtered through school-safe protocols.</li>
+            <li><strong>Teacher-Controlled:</strong> The educator remains the "Orchestrator," with full control over the visual and auditory environment at all times via a centralized tablet.</li>
+            <li><strong>Data Privacy:</strong> All student engagement metrics are handled locally and securely, adhering to global institutional data protection standards.</li>
+        </ul>
+
+        <h3>Inclusive Innovation: Supporting SEND & Universal Design</h3>
+        <p>The Immersive Lab is an "Accessible Innovation" space, designed to be inclusive of students with diverse learning needs:</p>
+        <ul>
+            <li><strong>Sensory-Friendly Learning:</strong> The open-air nature of the lab is ideal for students who may experience sensory overload or physical discomfort with traditional headsets.</li>
+            <li><strong>Physical Accessibility:</strong> The lab is 100% wheelchair accessible, ensuring that students with physical disabilities have the same "front-row seat" to global exploration as their peers.</li>
+            <li><strong>Neurodiversity:</strong> The high-visual, kinetic nature provides a powerful alternative for auditory and visual learners who struggle with traditional text-heavy pedagogy.</li>
+        </ul>
+
+        <h3>The Parental Engagement Magnet</h3>
+        <p>Beyond its daily use in the curriculum, the Immersive Lab serves as a flagship asset for the school’s business development:</p>
+        <ul>
+            <li><strong>Enrollment Tours:</strong> Provide prospective families with a "wow" moment that clearly differentiates your institution from competitors.</li>
+            <li><strong>Parent-Teacher Evenings:</strong> Host immersive briefings where parents can step into their child’s learning world.</li>
+            <li><strong>Community Events:</strong> Use the space for alumni gatherings, board meetings, or guest speaker series in a high-impact, professional setting.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Strategic Site Placement: Proposed "Future Classroom" Locations</h2>
+        <span class="tagline">"Optimizing Existing Infrastructure for Maximum Student Impact"</span>
+        <p>Based on our analysis of the Kingdom Schools floor plans, we have identified high-priority zones for the integration of the Immersive Lab. These locations have been selected based on student foot traffic, proximity to core STEM/Arts faculties, and ease of technical installation.</p>
+        
+        <h3>Girls High School</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Level</th>
+                    <th>Proposed Area</th>
+                    <th>Strategic Rationale</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>First Floor</td><td>Innovation Lab</td><td>The primary hub for AI and TASI integration; creates a dedicated "center of excellence."</td></tr>
+                <tr><td>First Floor</td><td>ICT Room</td><td>Upgrades traditional computing into a spatial data environment for advanced coding and design.</td></tr>
+                <tr><td>Ground Floor</td><td>Biology Lab</td><td>Ideal for "Digital Dissections" and 360° anatomy explorations within the science curriculum.</td></tr>
+                <tr><td>Ground Floor</td><td>Open Breakout Area</td><td>Transforms a transitional space into a "Passive Learning Zone" or a flagship showcase for visitors.</td></tr>
+            </tbody>
+        </table>
+
+<img src="Girls Floor Plan.jpg" alt="Girls High School Strategic Placement" class="site-plan-img">
+<p style="text-align: center; font-size: 0.9em; color: #666; font-style: italic;">
+    Proposed Strategic Placements: Innovation Lab, ICT Room, Biology Lab, and Breakout Area.
+</p>
+
+        <h3>Phase 4: Boys School (Grades 4–8)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Level</th>
+                    <th>Proposed Area</th>
+                    <th>Strategic Rationale</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Ground Floor</td><td>Innovation & Makers Space</td><td>Merges physical "making" with digital "visualizing"—perfect for engineering and 3D modeling.</td></tr>
+                <tr><td>Ground Floor</td><td>ICT Room</td><td>Provides a modern, collaborative alternative to the standard "rows-of-desks" computer lab setup.</td></tr>
+                <tr><td>First Floor</td><td>Art & DT (Design Tech)</td><td>Enables students to walk through their 3D designs and exhibit digital art at a room-filling scale.</td></tr>
+                <tr><td>First Floor</td><td>Open Breakout Area</td><td>Creates a flexible, multi-purpose "Shared Intelligence" hub for group projects and inter-disciplinary study.</td></tr>
+            </tbody>
+        </table>
+
+<img src="Boys Floor Plan.jpg" alt="Girls High School Strategic Placement" class="site-plan-img">
+<p style="text-align: center; font-size: 0.9em; color: #666; font-style: italic;">
+    Proposed Strategic Placements: Innovation Lab, ICT Room, Biology Lab, and Breakout Area.
+</p>
+    </section>
+
+    <section>
+        <h2>Technical Infrastructure</h2>
+        <span class="tagline">"A Multi-Activity, Touch-Enabled Environment for Active Learning"</span>
+        <p>The Immersive Lab is a high-performance, free-standing 4m x 4m structure designed for deep institutional impact. It is powered by the industry-leading Igloo Core Engine and specialized Immersive Media Players (IMP), ensuring a seamless, high-fidelity experience.</p>
+        <ul>
+            <li><strong>Projection System:</strong> A fully-immersive system featuring six high-lumen projectors. Options include 4K resolution for the highest quality projected image achievable in the industry, delivering unmatched clarity for simulation and VR.</li>
+            <li><strong>360° Sound:</strong> Integrated 4.0 surround sound (wired or networked) provides a multi-channel auditory experience that moves with the content.</li>
+            <li><strong>Tactile Interaction:</strong> Controlled via a Windows-based touch control panel, allowing teachers and students to navigate environments with the same ease as a tablet.</li>
+            <li><strong>Customizable Design:</strong> The structure features fully-branded fabric outer skins and an aluminium frame, allowing the lab to be physically integrated into the school’s aesthetic.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Investment Summary: Immersive Lab</h2>
+        <span class="tagline">"Turnkey Implementation & Institutional Lifecycle Support"</span>
+        <p>The following pricing includes the full 8-week deployment roadmap: procurement, shipping (DDP Riyadh), professional installation, and our rigorous bi-weekly in-person teacher training program.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Module / Component</th>
+                    <th>Description</th>
+                    <th>Per School (SAR)</th>
+                    <th>Total (SAR)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Immersive Lab</strong></td>
+                    <td>360° Shared Environment (Hardware, Touch-Screen Interface & TASI AI Layer)</td>
+                    <td class="price-text">SR 1,700,000.00</td>
+                    <td class="price-text">SR 1,700,000.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Manifest XR &copy; 2026 | Proprietary & Confidential Proposal for Kingdom Schools</p>
+    </footer>
+</div>
+
+</body>
+</html>
